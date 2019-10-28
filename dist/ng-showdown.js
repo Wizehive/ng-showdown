@@ -7,7 +7,7 @@
     // Node. Does not work with strict CommonJS, but
     // only CommonJS-like environments that support module.exports,
     // like Node.
-    module.exports = factory(require('angular'), require('showdown'));
+    module.exports = factory(angular, require('showdown'));
   } else {
     // Browser globals (root is window)
     root.ngShowdown = factory(root.angular, root.showdown);
